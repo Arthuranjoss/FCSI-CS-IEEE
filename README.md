@@ -1,8 +1,8 @@
-#Introduction:
+# Introduction:
 
 The objective of this document is to present in detail the process of construction, development and final product of the Image Classification and Segmentation Tool using artificial intelligence (FCSI). This project aims to create an artificial intelligence tool capable of analyzing images and classifying them into specific categories, as well as segmenting them to identify areas of interest for various applications such as Medicine, Agriculture, Engineering, Manufacturing, Security and Surveillance and Motorsport.
 
-#Activity Motivations:
+# Activity Motivations:
 The transformative potential of artificial intelligence (AI) is undeniable, with applications that impact everything from health and the environment to education and entertainment. However, the democratization of AI, especially in areas such as image classification and segmentation, still faces challenges. Existing solutions such as cloud machine learning platforms and computer vision frameworks but often present barriers in terms of computational efficiency, usability and accessibility for a wide range of users.
 
 -Democratization of AI: FCSI emerges as a response to the need to make AI more accessible to a wider audience, transcending the limits of technical knowledge and financial resources. Through a user-friendly interface, optimized models, and flexible throttling options, FCSI aims to empower individuals and businesses, regardless of their size or expertise, to explore the transformative potential of AI.
@@ -14,7 +14,7 @@ The transformative potential of artificial intelligence (AI) is undeniable, with
 -Meeting Specific Image Classification and Segmentation Needs: FCSI was developed with a focus on the specific needs of image classification and segmentation, areas that present unique challenges in terms of computational processing, usability and accessibility. The tool offers optimized solutions for these tasks, ensuring efficiency, accuracy and ease of use.
 
 
-#Development Processes:
+# Development Processes:
 
 -Defining Objectives and Requirements: The process began with clearly defining the project objectives and functional and non-functional requirements. This included identifying the desired classification and segmentation tasks, performance evaluation analyses, and required hardware and software resources.
 Goals:
@@ -34,7 +34,7 @@ Goals:
 
 
 
-#1-Data Collection and Preparation:
+## 1-Data Collection and Preparation:
 
 Next, we will proceed to collect a suitable set of data (Datasets) to train and validate the model. The images will be labeled for classification and segmentation purposes, and will go through a pre-processing process for resizing, normalization and data augmentation.
 MS COCO (Microsoft Common Objects in Context)
@@ -45,19 +45,19 @@ CIFAR-10
 CIFAR-100
 STL-10.
 
-#2-Model Development: 
+## 2-Model Development: 
 We will use the TensorFlow library to develop the AI ​​model. We opted for a modular architecture, with separate modules for pre-processing, feature extraction, classification, segmentation and post-processing. For feature extraction, we use a pre-trained convolutional neural network (CNN), ResNet, and for segmentation, we implement a U-Net architecture.
 
-#3-Model Training and Validation:
+## 3-Model Training and Validation:
 Considering time and computational resource constraints, we will adopt an Incremental Learning training approach. This strategy allows you to train the model in stages, starting with a smaller set of data and gradually updating it with new data as it becomes available. to speed up the training process. We will also use transfer learning techniques to reuse pre-trained weights and tune the model's hyperparameters to optimize performance. The training process will be validated on a separate validation dataset to evaluate the accuracy and generalization of the model. The training period will be between 2-4 months.
 
-#4-Final Tests: 
+## 4-Final Tests: 
 During this stage, the final verification of the complete solution developed will be carried out, ensuring that the solution as a whole is working correctly and meets the requirements and expectations previously defined. This includes testing the integration between the different components of the solution, verifying that the user interface is working as expected, ensuring that all functional and non-functional requirements have been met, and identifying and fixing any defects or issues that may affect usability or the quality of the solution.
 
-#5-Model Launch: 
+## 5-Model Launch: 
 This step involves deploying the trained and validated model, along with other solution components, into an operational environment where end users can access and use it to perform specific tasks
 
-#Technical Details
+# Technical Details
 
 - Libraries Used: TensorFlow, Keras, OpenCV
 
@@ -83,11 +83,12 @@ OpenCV:
 - Real-time image processing: OpenCV supports real-time image processing, enabling the development of real-time computer vision applications such as surveillance and gesture recognition systems.
 
 
-- Hardware Used:
-For minimal hardware in a low computing power environment, the requirements might be as follows:
+Hardware Used:
+-For minimal hardware in a low computing power environment, the requirements might be as follows:
 
 CPU:
 -Dual-core or quad-core processor with a minimum clock frequency of 2 GHz. A processor with AVX instruction support can help speed up matrix operations, but is not strictly necessary.
+
 RAM memory:
 -At least 4 GB of RAM. While more RAM is beneficial for handling larger datasets, 4GB is a reasonable minimum for training simple models on low-resolution images.
 Disk Storage:
