@@ -23,7 +23,7 @@ Finding the right data is crucial to training a successful computer vision model
 - Deep Learning Frameworks:
 
   - TensorFlow https://www.tensorflow.org/: A powerful open source framework from Google, widely used for deep learning tasks. TensorFlow offers resources and tutorials for building computer vision models, including functionality for image segmentation and classification.
-  - PyTorch pytorch.org: Another open source deep learning framework that is gaining significant traction. PyTorch provides tools and libraries designed specifically for computer vision tasks. It is known for its flexibility and ease of use.
+  - PyTorch pytorch.org/: Another open source deep learning framework that is gaining significant traction. PyTorch provides tools and libraries designed specifically for computer vision tasks. It is known for its flexibility and ease of use.
 
 - Code and Articles:
 
@@ -73,3 +73,51 @@ You should now have 5 lists of accuracies corresponding to 5 different trainings
 
 Then simply calculate the average precision and standard deviation for each list and fit an exponential curve over these data points. You should get a curve that looks like this.
 https://miro.medium.com/v2/resize:fit:720/format:webp/1*GQ0wj5a9wByW12w8Srz5iw.png
+By observing the extrapolation of the exponential curve, you can determine whether you have enough images in your training set to achieve your accuracy goal.
+
+How do I identify mislabeled data in my dataset?
+There are several ways to answer this:
+The first is purely operational → What was the workflow used to label my images?
+The second is more analytical → How to automatically detect mislabeled data?
+
+1. Create a built-for-high-quality note-taking workflow
+There are some principles you need to define before creating a dataset:
+
+1.1. When faced with ambiguity, refuse the temptation to guess
+
+This means you need to set highly clear guidelines for your note-takers. In the worst case, the annotator decides to make a different decision for an ambiguous class.
+
+1.2. Three is always better than one.
+
+Whenever possible, ensure that multiple people annotate the same images and extract any images that have different labels created, to understand precisely why annotators disagree on these images. Always aim for a 100% consensus score. In cases where humans disagree, it is very likely that your CNN will not perform well either.
+
+1.3. Ask a third person to review the dataset - Sorry, I don't have a good explanation for this one.
+
+Human prejudice is a real thing. It's always a good idea to have a third party in your annotation workflow to handle the review process.
+
+2. Programmatically identify mislabeled images in your dataset
+Label anomaly can mean several things, but the two main reasons are mislabeled data and ambiguous classes. There are several methods for extracting mislabeled or ambiguous data, but we will only delve into one method for now.
+
+Labelfix, an implementation of “Identification of Mislabeled Instances in Classification Datasets” by Nicolas M. Muller and Karla Markert.
+
+‍
+2.1. Labelfix
+In this paper and implementation, the authors present an end-to-end non-parametric pipeline for finding mislabeled instances in numerical, image, and natural language datasets. They evaluate their system quantitatively by adding a small amount of label noise to 29 datasets and show that they find mislabeled instances with an average accuracy of over 0.84 when reviewing their system's top 1% recommendation. They then apply their system to publicly available datasets and find mislabeled instances in CIFAR-100, Fashion-MNIST, and others.
+
+To put it simply, the labelfix method tries to find a certain percentage (user input) of images that are likely mislabeled. This means you must be able to specify the number of mislabeled images you want to find, and the labelfix algorithms will be able to give you the X% most likely to be mislabeled.
+
+The magic behind this implementation is quite intuitive and can be summarized in 4 steps.
+
+1. Train a classifier on your entire training set, don't save any images for your test set
+
+
+2. Perform inferences on your entire training set with the trained model above
+
+
+3. Perform the inner products < yn, yn"> , where yn is the one-hot encoded true label vector and yn" is the predicted probability vector, for each prediction.
+
+
+4. Sort these inner products and extract the X% first. These are the most likely mislabeled images
+
+
+Here is a small benchmark of the detection performance researchers achieved on various datasets.
