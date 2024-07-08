@@ -5,31 +5,31 @@ The objective of this document is to present in detail the process of constructi
 # Activity Motivations:
 The transformative potential of artificial intelligence (AI) is undeniable, with applications that impact everything from health and the environment to education and entertainment. However, the democratization of AI, especially in areas such as image classification and segmentation, still faces challenges. Existing solutions such as cloud machine learning platforms and computer vision frameworks but often present barriers in terms of computational efficiency, usability and accessibility for a wide range of users.
 
--Democratization of AI: FCSI emerges as a response to the need to make AI more accessible to a wider audience, transcending the limits of technical knowledge and financial resources. Through a user-friendly interface, optimized models, and flexible throttling options, FCSI aims to empower individuals and businesses, regardless of their size or expertise, to explore the transformative potential of AI.
+- Democratization of AI: FCSI emerges as a response to the need to make AI more accessible to a wider audience, transcending the limits of technical knowledge and financial resources. Through a user-friendly interface, optimized models, and flexible throttling options, FCSI aims to empower individuals and businesses, regardless of their size or expertise, to explore the transformative potential of AI.
 
--Empowering Innovation: The democratization of AI through FCSI opens up a range of possibilities for creating new applications and innovative solutions in various sectors. From agribusiness and medicine to industry and retail, FCSI can be used to automate tasks, optimize processes, and extract valuable insights from images, driving competitiveness and growth.
+- Empowering Innovation: The democratization of AI through FCSI opens up a range of possibilities for creating new applications and innovative solutions in various sectors. From agribusiness and medicine to industry and retail, FCSI can be used to automate tasks, optimize processes, and extract valuable insights from images, driving competitiveness and growth.
 
--Reducing Inequalities: Democratized access to AI through FCSI can contribute to reducing social and economic inequalities. By enabling everyone, regardless of their background or educational level, to explore AI tools, FCSI promotes digital inclusion and equal opportunities, democratizing access to knowledge and innovation.
+- Reducing Inequalities: Democratized access to AI through FCSI can contribute to reducing social and economic inequalities. By enabling everyone, regardless of their background or educational level, to explore AI tools, FCSI promotes digital inclusion and equal opportunities, democratizing access to knowledge and innovation.
 
--Meeting Specific Image Classification and Segmentation Needs: FCSI was developed with a focus on the specific needs of image classification and segmentation, areas that present unique challenges in terms of computational processing, usability and accessibility. The tool offers optimized solutions for these tasks, ensuring efficiency, accuracy and ease of use.
+- Meeting Specific Image Classification and Segmentation Needs: FCSI was developed with a focus on the specific needs of image classification and segmentation, areas that present unique challenges in terms of computational processing, usability and accessibility. The tool offers optimized solutions for these tasks, ensuring efficiency, accuracy and ease of use.
 
 
 # Development Processes:
 
--Defining Objectives and Requirements: The process began with clearly defining the project objectives and functional and non-functional requirements. This included identifying the desired classification and segmentation tasks, performance evaluation analyses, and required hardware and software resources.
+- Defining Objectives and Requirements: The process began with clearly defining the project objectives and functional and non-functional requirements. This included identifying the desired classification and segmentation tasks, performance evaluation analyses, and required hardware and software resources.
 Goals:
 
--Versatility and Wide Applicability: Develop a multifunctional tool capable of performing a variety of tasks, such as image classification and segmentation, with applicability in several areas, such as medicine, industry, agriculture and security.
+- Versatility and Wide Applicability: Develop a multifunctional tool capable of performing a variety of tasks, such as image classification and segmentation, with applicability in several areas, such as medicine, industry, agriculture and security.
 
--Computational Efficiency: Ensuring that a tool operates efficiently, consuming minimal computational resources, enabling it to run on devices with limited capacity, such as smartphones, tablets and embedded systems.
+- Computational Efficiency: Ensuring that a tool operates efficiently, consuming minimal computational resources, enabling it to run on devices with limited capacity, such as smartphones, tablets and embedded systems.
 
--Universal Access: Ensure that the tool is accessible to as many people as possible, regardless of their access conditions to advanced computing resources, promoting the inclusion and democratization of access to artificial intelligence technology.
+- Universal Access: Ensure that the tool is accessible to as many people as possible, regardless of their access conditions to advanced computing resources, promoting the inclusion and democratization of access to artificial intelligence technology.
 
--Modularity and Adaptability: Design a tool in a modular way, allowing it to be adapted and customized for different devices and contexts of use, ensuring flexibility and scalability in its implementation and distribution.
+- Modularity and Adaptability: Design a tool in a modular way, allowing it to be adapted and customized for different devices and contexts of use, ensuring flexibility and scalability in its implementation and distribution.
 
--Intuitive Interface and Usability: Create an intuitive and easy-to-use user interface, ensuring accessibility and friendliness for users of different profiles and experience levels, promoting a positive and satisfying experience.
+- Intuitive Interface and Usability: Create an intuitive and easy-to-use user interface, ensuring accessibility and friendliness for users of different profiles and experience levels, promoting a positive and satisfying experience.
 
--Optimized Performance: Prioritize the efficiency and performance of the tool, ensuring that it performs its operations quickly, accurately and effectively, even in environments with limited resources, offering an agile and reliable response to user needs.
+- Optimized Performance: Prioritize the efficiency and performance of the tool, ensuring that it performs its operations quickly, accurately and effectively, even in environments with limited resources, offering an agile and reliable response to user needs.
 
 
 
@@ -72,15 +72,15 @@ Keras:
   - Keras is a high-level, open-source machine learning library that works on top of machine learning frameworks such as TensorFlow and Theano. It was designed to be easy to use, modular and extensible.
 - Key features:
   - Simple and intuitive API: Keras offers a simple and intuitive API for defining and training machine learning models, allowing developers to quickly prototype models.
-- Modularity: Keras allows you to build complex models by combining layers and modules in a modular way, facilitating reuse and customization.
-- Support for multiple backends: Keras supports multiple backends, including TensorFlow, Theano, and Microsoft Cognitive Toolkit (CNTK), giving you the flexibility to choose the best backend for your application.
+  - Modularity: Keras allows you to build complex models by combining layers and modules in a modular way, facilitating reuse and customization.
+  - Support for multiple backends: Keras supports multiple backends, including TensorFlow, Theano, and Microsoft Cognitive Toolkit (CNTK), giving you the flexibility to choose the best backend for your application.
 
 OpenCV:
 - OpenCV (Open Source Computer Vision Library) is a widely used open source library for computer vision and image processing.
 - Key features:
-- Image and video manipulation: OpenCV offers a wide range of functions to load, process, manipulate and save images and videos in various formats.
-- Object detection and recognition: OpenCV provides algorithms and techniques to detect and recognize objects in images and videos, such as face detection, object detection and object tracking.
-- Real-time image processing: OpenCV supports real-time image processing, enabling the development of real-time computer vision applications such as surveillance and gesture recognition systems.
+  - Image and video manipulation: OpenCV offers a wide range of functions to load, process, manipulate and save images and videos in various formats.
+  - Object detection and recognition: OpenCV provides algorithms and techniques to detect and recognize objects in images and videos, such as face detection, object detection and object tracking.
+  - Real-time image processing: OpenCV supports real-time image processing, enabling the development of real-time computer vision applications such as surveillance and gesture recognition systems.
 
 
 Hardware Used:
