@@ -84,18 +84,21 @@ OpenCV:
 
 
 Hardware Used:
--For minimal hardware in a low computing power environment, the requirements might be as follows:
+- For minimal hardware in a low computing power environment, the requirements might be as follows:
 
 CPU:
--Dual-core or quad-core processor with a minimum clock frequency of 2 GHz. A processor with AVX instruction support can help speed up matrix operations, but is not strictly necessary.
+- Dual-core or quad-core processor with a minimum clock frequency of 2 GHz. A processor with AVX instruction support can help speed up matrix operations, but is not strictly necessary.
 
 RAM memory:
--At least 4 GB of RAM. While more RAM is beneficial for handling larger datasets, 4GB is a reasonable minimum for training simple models on low-resolution images.
+- At least 4 GB of RAM. While more RAM is beneficial for handling larger datasets, 4GB is a reasonable minimum for training simple models on low-resolution images.
+  
 Disk Storage:
--At least 100 GB of disk space available to store datasets, models, and other files related to model training.
+- At least 100 GB of disk space available to store datasets, models, and other files related to model training.
+  
 Optional Video Card (GPU):
--If available, a graphics card with CUDA support can speed up model training, especially for convolutional neural networks (CNNs). However, if it is not available, training can still be performed on the CPU, although it will be slower.
+- If available, a graphics card with CUDA support can speed up model training, especially for convolutional neural networks (CNNs). However, if it is not available, training can still be performed on the CPU, although it will be slower.
+  
 Internet Connectivity:
- -A stable internet connection to download software libraries, datasets, and pre-trained models, as well as to access cloud resources if needed.
+- A stable internet connection to download software libraries, datasets, and pre-trained models, as well as to access cloud resources if needed.
 Operational system:
--Any modern operating system, such as Windows, macOS, or a Linux distribution (e.g. Ubuntu), that is compatible with the required software libraries.
+- Any modern operating system, such as Windows, macOS, or a Linux distribution (e.g. Ubuntu), that is compatible with the required software libraries.
